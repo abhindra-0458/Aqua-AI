@@ -457,3 +457,13 @@ button:hover{
     }
 }
 
+@media (max-height: 2000px){
+    #ai{
+        height: fit-content;
+    }
+
+    .form-container{
+        height: fit-content;
+    }
+}
+
