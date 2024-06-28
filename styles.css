@@ -244,7 +244,7 @@ button{
     background: linear-gradient(135deg, #3A29A3, #C27E7E);
     font-weight:400;
     color: #fff;
-    width: 13vw;
+    width: 200px;
     height: 5vh;
     transition: background-image 0.6s ease-in-out;
     border-style: none;
@@ -329,7 +329,7 @@ button:hover{
 }
 
 
-@media (max-width: 475px){
+@media (max-width: 555px){
     body{
         height: 100vh;
     }
