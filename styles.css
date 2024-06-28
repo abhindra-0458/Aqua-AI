@@ -329,7 +329,7 @@ button:hover{
 }
 
 
-@media (max-width: 555px){
+@media (max-width: 1000px){
     body{
         height: 100vh;
     }
