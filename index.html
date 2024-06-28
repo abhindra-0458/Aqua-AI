@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a id = "navli1" href="#home">Home</a></li>
+                <li><a id = "navli2" href="#about">About</a></li>
+                <li><a id = "navli3" href="#ai">Services</a></li>
+            </ul>
+            <svg id = "ham" stroke="#fff" fill="#fff" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg>
+        </nav>
+    </header>
+
+    <section class="hero" id = "home">
+        <div class="content">
+            <h1 id = "wel">Welcome to <span class="highlight">Aqua AI</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <button>Get Started</button>
+            <div class="next-page-icon">
+            <a href = "#about"><img src ="Group 2.png"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id = "about">
+        <div class="abt">
+            <h2>About Aqua AI</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+
+    <section id="ai">
+        <div class="form-container">
+            <form action="#">
+                <div class="inner-container">
+                    <div class="datainput">
+                        <label for = "ph-value">pH Value</label>
+                        <input type="number" id="ph-value" name="ph-value" min="1" max="14" required>
+                    </div>
+                    <div class="datainput">
+                        <label for = "ph-value">Temperature (°C)</label>
+                        <input type="number" id="temp" name="temp" required>
+                    </div>
+                    <div class="datainput">
+                        <label for = "ph-value">Turbidity (NTU)</label>
+                        <input type="number" id="turbidity" name="turbidity" required>
+                    </div>
+                    <div class="datainput">
+                        <label for = "ph-value">Dissolved Oxygen (mg/L)</label>
+                        <input type="number" id="do" name="do" required>
+                    </div>
+                    <div class="datainput">
+                        <label for = "ph-value">Conductivity (μS/cm)</label>
+                        <input type="number" id="conductivity" name="conductivity" required>
+                    </div>
+                    <div class="datainput">
+                        <label for = "ph-value">Hardness</label>
+                        <input type="number" id="hard" name="hard" required>
+                    </div>
+                    <div class="datainput" id = "submitbtn">
+                        <input type="submit" value="Submit" id = "getresultsButton">
+                    </div>
+                </div>
+            </form>
+            <div class="result">
+                <!-- <div class="resultdata">
+                    <h2>Predicted pH:</h2>
+                    <p id="predicted-ph"></p>
+                </div>
+                <div class="conf">
+                    <div class="progress">
+                        <span id = "progressvalue">80%</span>
+                        </div>
+                    <h3>Confidence %</h3>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src = "script.js"></script>
+</body>
+</html>
